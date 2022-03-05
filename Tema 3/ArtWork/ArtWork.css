@@ -1,0 +1,91 @@
+.DivMare{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+
+
+.Row1{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 30px;
+}
+.Primele2Divuri{
+    display: inline-block;
+    background-color: rgb(209, 10, 10);
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+#div1{
+    margin-right:20px;
+    margin-left:5px;
+}
+#div2{
+    margin-left:20px;
+    margin-right:5px;
+}
+
+
+
+.Row2{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Div3{
+    display: inline-block;
+    background-color: yellow;
+    width: 240px;
+    height: 125px;
+    text-align: center;
+    z-index: 1;
+    position:relative;
+    left:60px;
+}
+.Div4{
+    display: inline-block;
+    background-color: red;
+    width: 240px;
+    height: 125px;
+    text-align: center;
+    z-index: 0;
+    position:relative;
+    
+}
+.Div5{
+    display: inline-block;
+    background-color: green;
+    width: 240px;
+    height: 125px;
+    text-align: center;
+    z-index: 1;
+    position:relative;
+    right:60px;
+}
+
+
+
+.Row3{
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.Div6{
+    display: inline-block;
+    background-color: rgb(4, 217, 255);
+    width: 500px;
+    height: 125px;
+    text-align: center;
+}
+.Div78{
+    display: inline-block;
+    background-color: rgb(4, 217, 255);
+    width: 250px;
+    height: 125px;
+    text-align: center;
+}
