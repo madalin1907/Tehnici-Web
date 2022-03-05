@@ -194,6 +194,12 @@ tr:hover{
 
 
 
+
+
+.Sources{
+    display: flex;
+    justify-content: center;
+}
 .Source{
     width: 50px;
     height: 50px;
@@ -209,6 +215,14 @@ tr:hover{
 }
 .SourceLink:hover {
     color: rgb(255, 0, 0);
+}
+
+.BottomHeader{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.Feedback{
+    text-align: center;
 }
 
 
@@ -247,10 +261,4 @@ tr:hover{
     color: rgb(255, 0, 0);
     text-decoration: none;
     font-weight: bold;
-}
-
-
-.End{
-    display: flex;
-    justify-content: center;
 }
