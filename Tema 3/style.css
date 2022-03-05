@@ -1,0 +1,256 @@
+.DropButton{
+    padding: 15px;
+    border-left: 2px solid rgb(202, 202, 202);
+    border-right: 2px solid rgb(202, 202, 202);
+    color: rgb(214, 214, 214);
+    background-color: black;
+    font-weight: bold;
+    font-size:16px;
+}
+
+.DropButton:Hover{
+    background-color: rgb(49, 49, 49);
+    text-decoration:none;
+}
+
+.DropDown{
+    position: relative;
+    display: inline-block;
+    
+}
+  
+.Dropdown-Content {
+    display: none;
+    position: absolute;
+    background-color: #bbbbbb;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+.Dropdown-Content a{
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+  
+.Dropdown-Content a:hover{
+    background-color: #ddd;
+}
+  
+.Dropdown:hover .Dropdown-Content{
+    display: block;
+}
+  
+
+
+
+
+.Sectiuni{
+    display: flex;
+    align-items: center;
+} 
+
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 18px;
+    right: 18px;
+    margin: 0px;
+    background-color: black;
+    border: 2px solid rgb(202, 202, 202);
+}
+
+.NavButton{
+    border-right: 2px solid rgb(202, 202, 202);
+    color: rgb(214, 214, 214);
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.NavButton:Hover{
+    background-color: rgb(49, 49, 49);
+    text-decoration:none;
+}
+
+.Logo{
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.Body{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    text-align: justify;
+    font-size: large;
+}
+
+.MainDiv{
+    background-color: rgb(202, 202, 202);
+    padding: 10px;
+}
+
+.Mesaj{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.h1{
+    padding: 5px;
+    border-style: dotted;
+    border-color: red;
+}
+
+.header{
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+.MainImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 470px;
+    width: 790px;
+}
+
+.CastPhoto{
+    display: block;
+    margin: auto;
+    height: 140px;
+    width: 100px;
+}
+
+.LastParagraph{
+    display: inline;
+}
+
+
+.Gallery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.GalleryPhoto1{
+    height: 250px;
+    width: 250px;   
+}
+.GalleryPhoto1:hover{
+    transform:scale(1.2);
+}
+
+.GalleryPhoto2{
+    height: 470px;
+    width: 790px;   
+}
+.GalleryPhoto2:hover{
+    transform:scale(1.2);
+}
+
+
+
+table{
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    margin-left: 100px;
+    text-align: center;
+    width:30%;
+}
+
+td, tr, th{
+    border: 2px solid black;
+}
+
+tr:nth-child(2n){
+    background-color:rgb(202, 199, 199);
+}
+
+tr:nth-child(2n+1){
+    background-color:rgb(138, 131, 131);
+}
+
+tr:hover{
+    background-color:red;
+}
+
+
+
+
+
+.Source{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+.SourceLink:link{
+    color: rgb(30, 4, 88);
+    background-color: transparent;
+    text-decoration: none;
+}
+.SourceLink:visited{
+    color: rgb(59, 29, 116);
+}
+.SourceLink:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+.QuizPage{
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+    text-align: justify;
+    font-size: large;
+}
+
+.QuizDiv{
+    background-color: rgb(202, 202, 202);
+    padding: 15px;
+}
+
+.BackPhoto{
+    vertical-align: middle;
+    height: 70px;
+    width: 115px;
+}
+
+.BackLink{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+.BackLink:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.End{
+    display: flex;
+    justify-content: center;
+}
