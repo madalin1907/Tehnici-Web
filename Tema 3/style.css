@@ -1,5 +1,7 @@
 .DropButton{
     padding: 15px;
+    border-top: none;
+    border-bottom: none;
     border-left: 2px solid rgb(202, 202, 202);
     border-right: 2px solid rgb(202, 202, 202);
     color: rgb(214, 214, 214);
@@ -63,6 +65,9 @@
     border: 2px solid rgb(202, 202, 202);
 }
 
+#FeedbackButton{
+    border: none;
+}
 .NavButton{
     border-right: 2px solid rgb(202, 202, 202);
     color: rgb(214, 214, 214);
