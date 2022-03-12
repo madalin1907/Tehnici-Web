@@ -1,0 +1,108 @@
+body{
+    height: 750px;
+    font-weight:bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.DivMare{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+
+.DivSus{
+    display: flex;
+    width: 98%;
+    height: 46%;
+}
+
+.Div12{
+    order: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Div1{
+    background-color: rgb(255, 0, 0);
+    height: 47%;
+    vertical-align: bottom;
+}
+.Div2{
+    background-color: rgb(255, 94, 0);
+    height: 47%;
+}
+
+.Div34{
+    order: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.Div3{
+    background-color: rgb(0, 110, 255);
+    height: 47%;
+}
+.Div4{
+    background-color: rgb(4, 0, 243);
+    height: 47%;
+}
+
+.Div567{
+    order: 3;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-right: 10px;
+    width: 50%;
+    height: 100%;
+}
+.Div5{
+    background-color: rgb(30, 255, 0);
+    height: 30%;
+    width: 99%;
+}
+.Div6{
+    background-color: rgb(13, 173, 47);
+    height: 30%;
+    width: 99%;
+}
+.Div7{
+    background-color: rgb(0, 255, 191);
+    height: 30%;
+    width: 99%;
+}
+
+.Div89{
+    order: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+.Div8{
+    background-color: rgb(187, 255, 0);
+    width: 20%;
+}
+.Div9{
+    background-color: rgb(255, 238, 0);
+    width: 70%;
+}
+
+
+.DivJos{
+    width: 98%;
+    height: 46%;
+    background-color: rgb(152, 0, 199);
+    vertical-align: auto;
+}
