@@ -15,11 +15,6 @@
     text-decoration:none;
 }
 
-.DropDown{
-    position: relative;
-    display: inline-block;
-    
-}
   
 .Dropdown-Content {
     display: none;

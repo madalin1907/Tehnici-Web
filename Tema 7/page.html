@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Madalin"/>
+        <title>Tema 7 - JavaScript</title>
+    </head>
+
+    <body>
+        <p style="font-size: 16px;"><strong>Exercitiul 1.</strong> Adaugati 3 input field-uri pentru name, password si email. Afisati valorile lor in consola la apasarea butonului de Submit.</p>
+        <div id="Ex1">
+            <input type="text" id="name" name="first_name" placeholder="Enter your name here." required>
+            <input type="email" id="email" name="email" placeholder="Enter your email here." required>
+            <input type="password" id="pass" name="pass" placeholder="Enter your password here." required>
+            <button onclick="function1()">Submit</button>
+        </div>
+
+        <p style="font-size: 16px; margin-top: 100px;"><strong>Exercitiul 2.</strong> Exercitiul 2. Adaugati 2 butoane ( + si - ) care sa mareasca / micsoreze marimea font-ului tuturor paragrafelor de pe pagina. Adaugati minim 2 paragrafe.</p>
+        <button style = "padding: 10px; width: 50px;" onclick="plus()">+</button>
+        <button style = "padding: 10px; width: 50px;" onclick="minus()">-</button>
+
+        <p style="font-size: 16px; margin-top: 100px;"><strong>Exercitiul 3.</strong> Exercitiul 3. Adaugati 4 butoane (W, A, S, D) care sa mute un patrat (div) in sus, stanga, jos, dreapta cu 5 px. Pentru a modifica pozitia folositi-va de top, left, bottom, right.</p>
+        <div id = "square" style = "background-color: red; width: 100px; height: 100px; position: absolute; top: 375px; left: 300px;"></div>
+        <button style = "padding: 10px; width: 50px; margin-left: 54px; margin-bottom: 5px;" onclick="up()">W</button>
+        <br>
+        <button style = "padding: 10px; width: 50px;" onclick="left()">A</button>
+        <button style = "padding: 10px; width: 50px;" onclick="down()">S</button>
+        <button style = "padding: 10px; width: 50px;" onclick="right()">D</button>
+
+        <p style="font-size: 16px; margin-top: 100px;"><strong>Exercitiul 4.</strong> Afisati intr-un paragraf initial gol, string-uri alese la intamplare dintr-o lista la apasarea unui buton. Lista trebuie definita de voi si sa contina minim 5 string-uri / texte.</p>
+        <button style = "padding: 10px; width: 100px;" onclick="randomString()">Afisează un fruct</button>
+        <p id="ParagrafGol"></p>
+
+        <script src="page.js"></script>
+    </body>
+</html>

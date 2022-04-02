@@ -1,8 +1,8 @@
-console.log("TEMA 6");
-alert("TEMA 6");
+console.log("TEMA 6 - JavaScript");
+alert("TEMA 6 - JavaScript");
 
 
-let nume = "Madalin";
+let MyName = "Madalin";
 
 function functionName(name){
     document.getElementById("id123").innerHTML="Numele meu este " + name;
