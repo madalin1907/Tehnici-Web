@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Madalin"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P2</title>
+
+        <style>
+            p{
+                width: max-content;
+            }
+            .c1{
+                color: red;
+            }
+            .c2{
+                color: orange;
+            }
+            .c3{
+                color: green;
+            }
+            .c4{
+                color: blue;
+            }
+            .c5{
+                color: blueviolet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            const date = new Date();
+            const N = Math.max(10, date.getMinutes());
+            console.log(N)
+
+            for (let i = 1; i <= N; ++i){
+                const p = document.createElement("p");
+                p.textContent = "Madalin";
+                const pClass = "c" + (Math.floor(Math.random() * 5) + 1)
+                p.classList.add(pClass);
+                document.body.append(p);
+
+                p.addEventListener("click", (e) => {
+                    e.stopPropagation();
+
+                    const paragrafe = document.getElementsByClassName(pClass);
+                    
+                    while(paragrafe.length)
+                        paragrafe[0].remove();
+                })
+            }
+
+            document.addEventListener("click", (e) =>{
+                alert(e.clientY);
+            })
+        </script>
+    </body>
+</html>

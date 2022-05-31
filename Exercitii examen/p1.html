@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Madalin"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P1</title>
+
+        <style>
+            body{
+                height: 100vh;
+                display: flex;
+                align-items: center;
+            }
+
+            #container{
+                box-sizing: border-box;
+                height: 500px;
+                width: 500px;
+                background-color: green;
+                border: 1px solid black;
+                display: flex;
+            }
+
+            .patrat{
+                height: 100%;
+                width: 20%;
+            }
+
+            .patrat:nth-child(2n){
+                border: 1px solid red;
+            }
+            .patrat:nth-child(2n+1){
+                border: 1px solid blue;
+            }
+
+            @media (max-width: 800px){
+                #container{
+                    width: 50vw;
+                    flex-direction: column;
+                }
+                .patrat{
+                    height: 20%;
+                    width: 100%;
+                }
+                body{
+                    animation: bgChanger 1s alternate infinite linear;
+                }
+            }
+
+            @keyframes bgChanger {
+                0% { background-color: white;}
+                100% { background-color: yellow; }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id = "container">
+            <div class="patrat"></div>
+            
+            <div class="patrat"></div>
+
+            <div class="patrat"></div>
+
+            <div class="patrat"></div>
+
+            <div class="patrat"></div>
+        </div>
+    </body>
+</html>

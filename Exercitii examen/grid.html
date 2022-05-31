@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Madalin"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>grid</title>
+
+        <style>
+            .container{
+                height: 50vh;
+                width: 250px;
+                border: 2px dotted blue;
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            .container > div{
+                border: 8px double black;
+                font-size: 15px;
+            }
+
+            #div1{
+                grid-row: 2/span 1;
+                grid-column: 1/span 1;
+            }
+            #div2{
+                grid-row: 1/span 1;
+                grid-column: 2/span 1;
+            }
+            #div3{
+                grid-row: 2/span 1;
+                grid-column: 2/span 1;
+            }
+            #div4{
+                grid-row: 3/span 1;
+                grid-column: 2/span 1;
+            }
+            #div5{
+                grid-row: 1/span 3;
+                grid-column: 3/span 1;
+            }
+
+            @media (max-width: 600px) and (max-height: 500px){
+                .container{
+                    display: block;
+                }
+                .container > div{
+                    transition: 3s linear;
+                }
+                .container > div:hover{
+                    font-size: 30px;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id = "div1">1</div>
+            <div id = "div2">2</div>
+            <div id = "div3">3</div>
+            <div id = "div4">4</div>
+            <div id = "div5">5</div>
+        </div>
+    </body>
+</html>
