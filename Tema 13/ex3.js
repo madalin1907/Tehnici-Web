@@ -1,28 +1,26 @@
-const data = document.getElementById("data");
-data.value = new Date();
-
-let select = document.getElementsByTagName("select")[0];
+const inputField = document.getElementById("data");
+const selectField = document.getElementsByTagName("select")[0];
+inputField.value = new Date();
 
 let counter = -1;
 
-let localCounter = localStorage.getItem("counter");
-if (localCounter){
-    counter = parseInt(localCounter);
-    select.selectedIndex = counter;
-    data.style.color = select.value;
+const lastColor = localStorage.getItem("lastColor");
+if (lastColor){
+    counter = parseInt(lastColor);
+    selectField.selectedIndex = counter;
+    inputField.style.color = selectField.value;
 }
 
-const interval = setInterval(() =>{
-    select.selectedIndex = ++counter;
-    data.style.color = select.value;
+const changeColor = setInterval(() =>{
     if (counter === 2)
         counter = -1;
-}, 3000)
+    
+    selectField.selectedIndex = ++counter;
+    inputField.style.color = selectField.value;
+}, 1000)
 
-
-document.addEventListener("keydown", (e) =>{
-    if (e.key.toUpperCase() === "S"){
-        clearInterval(interval);
-        localStorage.setItem("counter", counter % 3);
-    }
+document.addEventListener("keydown", (e) => {
+    if (e.key.toUpperCase() === "S")
+        clearInterval(changeColor);
+        localStorage.setItem("lastColor", counter);
 })
