@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Madalin"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P3</title>
+
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+        <input id = "button" type = "button" value="Start">
+
+
+
+        <script>
+            const button = document.getElementById("button");
+            let pressedButton = false;
+            let interval, bgColor;
+
+            const testLastColor = localStorage.getItem("lastColor");
+            if (testLastColor){
+                button.value = testLastColor;
+            }
+
+            button.addEventListener("click", () => {
+                if (pressedButton === false) {
+                    pressedButton = true;
+
+                    interval = setInterval(() =>{
+                        // Daca as fi pus doar Math.random() * 255, nu ar fi fost posibil sa se genereze
+                        // culoarea rgb(255, 255, 255), care este o culoare valida (alb).
+                        const r = Math.min(255, Math.random() * 256);
+                        const g = Math.min(255, Math.random() * 256);
+                        const b = Math.min(255, Math.random() * 256);
+                        generatedColor = `rgb(${r}, ${g}, ${b})`;
+
+                        button.value = generatedColor;
+                        document.body.style.backgroundColor = generatedColor;
+                    }, 2000)
+                }
+                else {
+                    localStorage.setItem("lastColor", generatedColor);
+                    clearInterval(interval);
+                }
+            })
+            
+        </script>
+    </body>
+</html>

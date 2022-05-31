@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Madalin"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P4</title>
+
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <input type = "text">
+            <button id = "submit" type="submit">SUBMIT</button>
+        </form>
+
+        <p></p>
+
+        <script>
+            const submitButton = document.getElementById("submit");
+            submitButton.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                const inputText  = document.getElementsByTagName("input")[0].value;
+                
+                if (inputText){
+                    fetch(`/verify/${inputText}`)
+                    .then(res => res.text())
+                    .then(data => serverResponse = data)
+                    .then(() => {
+                        let p = document.getElementsByTagName("p")[0];
+                        p.textContent = serverResponse;
+                    })
+                }
+                else{
+                    let p = document.getElementsByTagName("p")[0];
+                    p.textContent = "Inputul nu poate fi gol.";
+                }
+            })
+        </script>
+    </body>
+</html>

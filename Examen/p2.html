@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Madalin"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P2</title>
+
+        <style>
+            button{
+                width: 100px;
+                border: 2px solid black;
+                background-color: yellowgreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            const date = new Date();
+            const N = date.getMinutes() % 10;
+            
+            for (let i = 1; i <= N + 1; ++i){
+                const button = document.createElement("button");
+                button.textContent = 0;
+                document.body.append(button);
+
+                button.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    button.textContent = ++button.textContent;
+                })
+            }
+
+            document.addEventListener("click", () => {
+                const buttons = document.getElementsByTagName("button");
+
+                for (let i = 0; i < buttons.length; ++i){
+                    buttons[i].textContent = 0;
+                }
+            })
+
+        </script>
+    </body>
+</html>
